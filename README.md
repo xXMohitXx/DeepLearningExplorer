@@ -1,54 +1,118 @@
-# React + TypeScript + Vite
+# 🧠 Deep Learning Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Deep Learning Explorer** is an interactive educational website for visualizing and understanding core deep learning concepts. Explore neural networks, CNNs, LSTMs, backpropagation, and the mathematical foundations of deep learning—all with beautiful, interactive D3.js visualizations and clear explanations.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Highlights
 
-## Expanding the ESLint configuration
+- **Interactive Visualizations:** See how convolution, pooling, stride, and padding work in CNNs, and explore LSTM cells, backpropagation, and more.
+- **Math Fundamentals:** Learn the linear algebra, calculus, and probability concepts that power deep learning.
+- **Modern Tech Stack:** Built with React, TypeScript, D3.js, and Material UI for a smooth, responsive experience.
+- **Educational Focus:** Designed for students, educators, and anyone curious about how deep learning works under the hood.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📸 Screenshots
+
+<!--
+Add screenshots or GIFs of your app here!
+Example:
+![CNN Visualization](screenshots/cnn-visualization.png)
+-->
+
+---
+
+## 🚀 Getting Started
+
+### 1. **Clone the Repository**
+
+```bash
+git clone https://github.com/xXMohitXx/DeepLearningExplorer.git
+cd DeepLearningExplorer
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. **Install Dependencies**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Make sure you have [Node.js](https://nodejs.org/) (v16 or later recommended) and npm installed.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+### 3. **Run the Development Server**
+
+```bash
+npm run dev
+```
+
+Open your browser and go to [http://localhost:5173](http://localhost:5173) (or the URL shown in your terminal) to view the app.
+
+---
+
+## 🏗️ Build for Production
+
+To create an optimized production build:
+
+```bash
+npm run build
+```
+
+The output will be in the `dist/` folder. You can deploy this folder to any static hosting service.
+
+---
+
+## 🧩 Project Structure
+
+```
+src/
+  components/      # Reusable React components (e.g., Navbar)
+  pages/           # Main pages: CNN, LSTM, MathFundamentals, etc.
+  assets/          # Images and static assets
+  App.tsx          # Main app component and routing
+  index.tsx        # Entry point
+public/
+  index.html       # HTML template
+```
+
+---
+
+## 🛠️ Dependencies
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [D3.js](https://d3js.org/)
+- [Material UI](https://mui.com/)
+- [better-react-mathjax](https://github.com/fast-reflexes/better-react-mathjax) (for math rendering)
+- [Vite](https://vitejs.dev/) (for fast development)
+
+---
+
+## 💡 Contributing
+
+Contributions, suggestions, and feedback are welcome!  
+Feel free to open issues or pull requests.
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## 🙏 Acknowledgements
+
+- Inspired by [TensorFlow tutorials](https://www.tensorflow.org/tutorials) and [GeeksforGeeks articles](https://www.geeksforgeeks.org/).
+- Thanks to the open-source community for amazing tools and resources.
+
+---
+
+**Enjoy exploring deep learning!**
+
+---
+
+### References
+
+- [How to write a good README (freeCodeCamp)](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
+- [README best practices (banesullivan/README)](https://github.com/banesullivan/README)
