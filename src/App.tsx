@@ -11,6 +11,7 @@ import LSTM from './pages/LSTM';
 import Backpropagation from './pages/Backpropagation';
 import MathFundamentals from './pages/MathFundamentals';
 import { MathJaxContext } from 'better-react-mathjax';
+import { Analytics } from '@vercel/analytics/react';
 
 const theme = createTheme({
   palette: {
@@ -43,6 +44,7 @@ function App() {
           </Routes>
         </Router>
       </MathJaxContext>
+      <Analytics />
     </ThemeProvider>
   );
 }
